@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Registration Step</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">Workshop</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+
+            <div class="card p-4">
+                <div class="header">
+                    <h3>Final Registration Step</h3>
+                    <p class="text-muted">Complete your payment</p>
+                </div>
+
+                <!-- FORM -->
+                <form onsubmit="alert('Payment Successful!'); return false;">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs mb-3">
+                        <li class="nav-item">
+                            <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#card">
+                                Credit Card
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#netbanking">
+                                Net Banking
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+
+                        <!-- Credit Card -->
+                        <div class="tab-pane fade show active" id="card">
+                            <div class="mb-3">
+                                <label>Card Number</label>
+                                <input type="text" class="form-control" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label>Expiry Date</label>
+                                    <input type="text" class="form-control" placeholder="MM/YY" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label>CVV</label>
+                                    <input type="password" class="form-control" placeholder="123" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Net Banking -->
+                        <div class="tab-pane fade" id="netbanking">
+                            <div class="mb-3">
+                                <label>Select Bank</label>
+                                <select class="form-control" required>
+                                    <option value="">Choose Bank</option>
+                                    <option>SBI</option>
+                                    <option>HDFC</option>
+                                    <option>ICICI</option>
+                                    <option>Axis Bank</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>User ID</label>
+                                <input type="text" class="form-control" placeholder="Enter User ID" required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- PAY BUTTON -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary">
+                            Pay & Register
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
