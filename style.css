@@ -12,14 +12,16 @@ body {
 }
 .nav-tabs .nav-link.active {
     background-color:green;
-    color: green;
+    color: white;
     border-radius: 10px 10px 0 0;
 }
+
+
 .btn-primary {
-    background-color: white;
-    border: 1px solid green;
+    background-color: blue;
+    border: none;
     border-radius: 25px;
-    color: green;
+    /* color: green; */
     padding: 10px 25px;
 }
 .btn-primary:hover {
